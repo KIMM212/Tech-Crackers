@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            .container {
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+            form input[type="text"], form input[type="password"], form input[type="number"], form select {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            form input[type="radio"] {
+                margin: 0 5px;
+            }
+            form label {
+                font-size: 16px;
+                color: #333;
+            }
+            form input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                background-color: #254aee;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            form input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+            .signin-link {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .signin-link a {
+                color: #3060c7;
+                text-decoration: none;
+                font-size: 16px;
+            }
+            .signin-link a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>HTML Form</h1>
+            <form>
+                <input type="text" name="first_name" placeholder="First name" required>
+                <input type="text" name="last_name" placeholder="Last name" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <input type="number" name="age" placeholder="Age"><br>
+
+                <label>Gender: </label>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="female" id="female"><br>
+
+                <br>
+                <label for="level">CHOOSE YOUR LEVEL</label>
+                <select id="level" name="level">
+                    <option value="ICT Level 1">ICT LEVEL 1</option>
+                    <option value="ICT Level 2">ICT LEVEL 2</option>
+                    <option value="ICT Level 3">ICT LEVEL 3</option>
+                </select>
+                <br><br>
+
+                <input type="submit" name="submit" value="Sign Up">
+            </form>
+
+            <div class="signin-link">
+                <a href="signin.html">Sign in</a>
+            </div>
+        </div>
+
+    </body>
+</html>

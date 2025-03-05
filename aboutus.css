@@ -1,0 +1,111 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+h1 {
+    color: #007bff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #555;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+/* Content Box */
+pre {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 700px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    white-space: pre-wrap; /* Ensures text wraps properly */
+}
+
+/* Mission & Vision Styling */
+pre strong {
+    font-size: 18px;
+    color: #007bff;
+}
+
+
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    font-size: 14px;
+}
+
