@@ -1,10 +1,16 @@
+/* General Styles */
 body {
+    background-image: url(b-tech-technology-ict-inner-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
 }
 
+/* Navigation Bar */
 nav {
     width: 100%;
     display: flex;
@@ -20,39 +26,42 @@ nav {
 }
 
 .logo img {
-    height: 120px; /* Increase logo size */
+    height: 80px; /* Adjust logo size */
     display: block;
-    margin: -10px 0; /* Adjust to fit within navbar */
 }
 
-
-ul {
+/* Navigation Links */
+.nav-links {
+    font-family: 'Montserrat', sans-serif;
     list-style: none;
     display: flex;
     gap: 20px;
     padding: 0;
 }
 
-ul li {
+.nav-links li {
     display: inline;
 }
 
-ul li a {
+.nav-links li a {
     text-decoration: none;
     font-size: 18px;
     color: black;
+    transition: color 0.3s ease;
 }
 
-ul li a:hover{
+.nav-links li a:hover {
     color: blue;
 }
 
+/* Login & Register Buttons */
 .button-container {
     display: flex;
     gap: 10px;
 }
 
 button {
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 15px;
     border: none;
     background-color: blue;
@@ -60,17 +69,39 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: darkblue;
 }
 
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
 /* Intro Section */
 .intro-section {
     text-align: center;
     max-width: 800px;
-    margin: 150px auto 40px; /* Push content below navbar */
+    margin: 120px auto 40px; /* Push content below navbar */
     padding: 20px;
     background: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -89,10 +120,26 @@ button:hover {
     line-height: 1.6;
 }
 
+/* Responsive Intro Section */
+@media (max-width: 768px) {
+    .intro-section {
+        margin: 140px 20px 40px;
+        padding: 15px;
+    }
+
+    .intro-section h1 {
+        font-size: 24px;
+    }
+
+    .intro-section p {
+        font-size: 16px;
+    }
+}
+
 /* Box Containers */
 .container {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
     margin-top: 40px;
     flex-wrap: wrap;
@@ -100,8 +147,8 @@ button:hover {
 
 .box {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     cursor: pointer;
     overflow: hidden;
     border-radius: 10px;
@@ -119,6 +166,7 @@ button:hover {
 }
 
 .overlay-text {
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,7 +179,17 @@ button:hover {
     border-radius: 5px;
 }
 
+/* Responsive Boxes */
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+        height: auto;
+    }
 
+    .overlay-text {
+        font-size: 18px;
+    }
+}
 
 /* Footer Section */
 footer {
@@ -139,6 +197,7 @@ footer {
     color: white;
     padding: 20px 0;
     margin-top: 50px;
+    text-align: center;
 }
 
 .footer-container {
@@ -182,10 +241,18 @@ footer {
     color: white;
 }
 
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Copyright Section */
 .copyright {
     text-align: center;
     padding: 10px;
     background-color: #111;
     font-size: 14px;
 }
-
